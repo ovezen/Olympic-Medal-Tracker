@@ -1,0 +1,128 @@
+/* 전체 레이아웃 설정 */
+body {
+    margin: 0
+}
+
+.app-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f4f4f9;
+}
+
+.app-content {
+    width: 100%;
+    max-width: 1200px;
+    min-width: 800px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* 제목 */
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* 폼 */
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 8px;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.input-field label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.input[type=text],
+input[type=number] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.input-field input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 80%;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.button-group button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-group button:hover {
+    background-color: #45a049;
+}
+
+.medal-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.medal-list h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.medal-list th,
+.medal-list td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.medal-list th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.medal-list td button {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    color: #fff;
+    background-color: #ff5252;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.medal-list td button:hover {
+    background-color: #e04848;
+}
